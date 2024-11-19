@@ -5,7 +5,7 @@ repo init -u https://github.com/The-Pixel-Project/manifest -b fourteen-qpr3 -g d
 git clone https://github.com/Aeoniixx-Lavender/local_manifests -b TPP-14 .repo/local_manifests
 /opt/crave/resync.sh
 
-export BUILD_USERNAME=Aeoniixx 
+export BUILD_USERNAME=Aeonix 
 export BUILD_HOSTNAME=Crave
 
 . build/envsetup.sh
