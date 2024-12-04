@@ -5,16 +5,11 @@ repo init -u https://github.com/Project-PixelStar/manifest -b 14-qpr3 --git-lfs;
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
 
 git clone https://github.com/Aeoniixx-Lavender/local_manifests -b PixelStar-14 .repo/local_manifests;
-git clone https://github.com/Evolution-X/vendor_evolution-priv_keys-template.git vendor/priv/keys;
-
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
-
-cd vendor/priv/keys/;
-bash keys.sh;
-cd /tmp/src/android;
 
 export BUILD_USERNAME=Aeonix;
 
 source build/envsetup.sh;
+make clean;
 lunch pixelstar_lavender-userdebug;
 make bacon -j$(nproc --all)
