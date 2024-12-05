@@ -10,6 +10,5 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags;
 export BUILD_USERNAME=Aeonix;
 
 source build/envsetup.sh;
-make clean;
 lunch aosp_lavender-userdebug;
 make bacon -j$(nproc --all)
