@@ -12,5 +12,5 @@ export BUILD_USERNAME=Aeonix;
 
 source build/envsetup.sh;
 make clean;
-lunch pixelstar_lavender-user;
+lunch pixelstar_lavender-userdebug;
 make bacon
