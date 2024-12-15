@@ -11,6 +11,5 @@ repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune 
 export BUILD_USERNAME=Aeonix;
 
 source build/envsetup.sh;
-make clean;
 lunch pixelstar_lavender-userdebug;
 make bacon
