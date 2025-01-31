@@ -6,5 +6,5 @@ export BUILD_USERNAME=Aeoniixx;
 export BUILD_HOSTNAME=Aeoniixx;
 
 source build/envsetup.sh;
-lunch flare_lavender-ap4a-userdebug;
+lunch aosp_lavender-user;
 make bacon
