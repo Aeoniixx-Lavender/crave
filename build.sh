@@ -8,5 +8,6 @@ git clone https://github.com/Aeoniixx/android_packages_apps_Aperture -b lineage-
 chmod +x vendor/aosp/build/tools/createjson.sh;
 
 source build/envsetup.sh;
+make clean;
 lunch aosp_lavender-ap4a-userdebug;
-make bacon
+make bacon -j16
